@@ -1,0 +1,16 @@
+<Patch>
+    <!-- <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Weapons Expanded</li>
+        </mods>
+
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+              
+                
+
+            </operations>
+        </match>
+    </Operation> -->
+</Patch>

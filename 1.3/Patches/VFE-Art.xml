@@ -1,0 +1,15 @@
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Furniture Expanded - Art</li>
+        </mods>
+
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/ResearchProjectDef[defName="VFE_Res_Rugs"]/techLevel</xpath>
+            <value>
+                <techLevel>Medieval</techLevel>
+            </value>
+        
+        </match>
+    </Operation>
+</Patch>

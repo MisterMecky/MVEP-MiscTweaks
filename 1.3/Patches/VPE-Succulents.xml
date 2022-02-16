@@ -1,0 +1,15 @@
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Plants Expanded - Succulents</li>
+        </mods>
+
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/ResearchProjectDef[defName="VCE_SucculentSowing"]/baseCost</xpath>
+            <value>
+                <baseCost>300</baseCost>
+            </value>
+        
+        </match>
+    </Operation>
+</Patch>

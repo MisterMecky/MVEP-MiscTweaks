@@ -1,0 +1,14 @@
+<Patch>
+    <!-- <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Factions Expanded - Ancients</li>
+        </mods>
+
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[@Name = "VBE_SkillBookBase"]/recipeMaker</xpath>
+            <value>
+                <workSkillLearnPerTick>0</workSkillLearnPerTick>
+            </value>
+        </match>
+    </Operation> -->
+</Patch>

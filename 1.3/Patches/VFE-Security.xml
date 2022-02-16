@@ -1,0 +1,40 @@
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Furniture Expanded - Security</li>
+        </mods>
+
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+              
+                <!-- VFES_ChemfuelBarrel -->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="VFES_ChemfuelBarrel"]</xpath>
+                    <value>
+                        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+                    </value>
+                </li>
+
+                <!-- VFES_Landmine -->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="VFES_Landmine"]</xpath>
+                    <value>
+                        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+                    </value>
+                </li>
+
+                <!-- VFES_TrenchWarfare -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="VFES_TrenchWarfare"]/prerequisites</xpath>
+                     <value>
+                        <prerequisites>
+                            <li>GasOperation</li>
+                        </prerequisites>
+                     </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>

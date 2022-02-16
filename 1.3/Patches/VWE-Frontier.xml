@@ -1,0 +1,88 @@
+<Patch>
+    <!-- <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Weapons Expanded - Frontier</li>
+        </mods>
+
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+              
+                
+            </operations>
+        </match>
+    </Operation> -->
+
+    <!-- <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Weapons Expanded - Frontier</li>
+        </mods>
+
+        <match Class="PatchOperationFindMod">
+            <mods>
+                <li>Vanilla Weapons Expanded - Coilguns</li>
+            </mods>
+            <match Class="PatchOperationSequence">
+                <success>Always</success>
+                <operations>
+              
+                </operations>
+            </match>
+        </match>
+    </Operation> -->
+
+    <!-- <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Weapons Expanded - Frontier</li>
+        </mods>
+
+        <match Class="PatchOperationFindMod">
+            <mods>
+                <li>Vanilla Weapons Expanded - Heavy Weapons</li>
+            </mods>
+            <match Class="PatchOperationSequence">
+                <success>Always</success>
+                <operations>
+              
+                </operations>
+            </match>
+        </match>
+    </Operation> -->
+
+    <!-- <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Weapons Expanded - Frontier</li>
+        </mods>
+
+        <match Class="PatchOperationFindMod">
+            <mods>
+                <li>Vanilla Weapons Expanded - Laser</li>
+            </mods>
+            <match Class="PatchOperationSequence">
+                <success>Always</success>
+                <operations>
+                                
+                </operations>
+            </match>
+        </match>
+    </Operation> -->
+
+    <!-- <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Weapons Expanded - Frontier</li>
+        </mods>
+
+        <match Class="PatchOperationFindMod">
+            <mods>
+                <li>Vanilla Weapons Expanded - Quickdraw</li>
+            </mods>
+            <match Class="PatchOperationSequence">
+                <success>Always</success>
+                <operations>
+                               
+                </operations>
+            </match>
+        </match>
+    </Operation> -->
+
+</Patch>

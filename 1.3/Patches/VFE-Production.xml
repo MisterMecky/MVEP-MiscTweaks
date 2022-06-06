@@ -4,11 +4,11 @@
             <li>Vanilla Furniture Expanded - Production</li>
         </mods>
 
-        <match Class="PatchOperationAdd">
-            <xpath>Defs/ThingDef[@Name = "VBE_SkillBookBase"]/recipeMaker</xpath>
-            <value>
-                <workSkillLearnPerTick>0</workSkillLearnPerTick>
-            </value>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+
+            </operations>
         </match>
     </Operation> -->
 </Patch>

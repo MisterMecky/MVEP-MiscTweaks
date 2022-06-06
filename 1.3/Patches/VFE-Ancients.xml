@@ -1,14 +1,26 @@
 <Patch>
-    <!-- <Operation Class="PatchOperationFindMod">
+    <Operation Class="PatchOperationFindMod">
         <mods>
             <li>Vanilla Factions Expanded - Ancients</li>
         </mods>
 
-        <match Class="PatchOperationAdd">
-            <xpath>Defs/ThingDef[@Name = "VBE_SkillBookBase"]/recipeMaker</xpath>
-            <value>
-                <workSkillLearnPerTick>0</workSkillLearnPerTick>
-            </value>
+        <match Class="patchOperationSequence">
+
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/VFEAncients.PowerDef[defName = "MartialArtist"]/setStats</xpath>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/VFEAncients.PowerDef[defName = "MartialArtist"]</xpath>
+                <value>
+                    <statOffsets>
+                        <MeleeDodgeChance>40</MeleeDodgeChance>
+                    </statOffsets>
+                </value>
+            </li>
+
         </match>
-    </Operation> -->
+
+        
+    </Operation>
 </Patch>

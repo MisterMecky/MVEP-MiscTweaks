@@ -1,0 +1,18 @@
+<loadFolders>
+    <v1.3>
+        <li>/</li>
+        <li>1.3</li>
+        
+        <!-- <li IfModActive="VanillaExpanded.VPlantsEMore">1.3/Mods/VanillaPlantsExpanded-MorePlants</li> -->
+        <li IfModActive="vanillaexpanded.vbookse">1.3/Mods/VanillaBooksExpanded</li>
+        <li IfModActive="vanillaexpanded.vaeaccessories">1.3/Mods/VanillaApparelExpanded-Accessories</li>
+        <li IfModActive="vanillaexpanded.vappe">1.3/Mods/VanillaApparelExpanded</li>
+        <li IfModActive="vanillaexpanded.varme">1.3/Mods/VanillaArmourExpanded</li>
+        <li IfModActive="vanillaexpanded.vfea">1.3/Mods/VanillaFactionsExpanded-Ancients</li>
+        <li IfModActive="vanillaexpanded.vfeart">1.3/Mods/VanillaFurnitureExpanded-Art</li>
+        <li IfModActive="vanillaexpanded.vfesecurity">1.3/Mods/VanillaFurnitureExpanded-Security</li>
+        <li IfModActive="vanillaexpanded.vplantsesucculents">1.3/Mods/VanillaPlantsExpanded-Succulents</li>
+        <li IfModActive="vanillaexpanded.vanillatraitsexpanded">1.3/Mods/VanillaTraitsExpanded</li>
+
+    </v1.3>
+</loadFolders>

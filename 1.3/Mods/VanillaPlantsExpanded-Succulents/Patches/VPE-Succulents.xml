@@ -1,0 +1,10 @@
+<Patch>
+    <Operation Class="PatchOperationReplace">
+
+        <xpath>Defs/ResearchProjectDef[defName="VCE_SucculentSowing"]/baseCost</xpath>
+        <value>
+            <baseCost>300</baseCost>
+        </value>
+
+    </Operation>
+</Patch>

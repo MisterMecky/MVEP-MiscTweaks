@@ -1,0 +1,10 @@
+<Patch>
+    <Operation Class="PatchOperationAdd">
+
+        <xpath>Defs/ThingDef[@Name = "VBE_SkillBookBase"]/recipeMaker</xpath>
+        <value>
+            <workSkillLearnPerTick>0</workSkillLearnPerTick>
+        </value>
+
+    </Operation>
+</Patch>

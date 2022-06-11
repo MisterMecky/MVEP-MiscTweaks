@@ -1,0 +1,31 @@
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+              
+            <!-- VAE_Headgear_NightVisionGoggles -->
+
+            <li Class="PatchOperationReplace" MayRequire="ludeon.rimworld.ideology">
+                <xpath>Defs/ThingDef[defName="VAE_Headgear_NightVisionGoggles"]/label</xpath>
+                <value>
+                    <label>night vision goggles</label>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace" MayRequire="ludeon.rimworld.ideology">
+                <xpath>Defs/ThingDef[defName="VAE_Headgear_NightVisionGoggles"]/description</xpath>
+                <value>
+                    <description>A set of night vision goggles allowing the wearer to fire weapons in the dark with higher precision.</description>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace" MayRequire="ludeon.rimworld.ideology">
+                <xpath>Defs/ThingDef[defName="VAE_Headgear_NightVisionGoggles"]/equippedStatOffsets/AimingDelayFactor</xpath>
+                <value>
+                    <ShootingAccuracyOutdoorsDarkOffset>0.10</ShootingAccuracyOutdoorsDarkOffset>
+                    <ShootingAccuracyIndoorsDarkOffset>0.10</ShootingAccuracyIndoorsDarkOffset>
+                </value>
+            </li>
+
+        </operations>
+    </Operation>
+</Patch>

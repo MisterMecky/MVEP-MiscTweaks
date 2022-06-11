@@ -1,0 +1,32 @@
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+              
+            <!-- VAE_Apparel_MilitaryUniform -->
+            
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VAE_Apparel_MilitaryUniform"]/costStuffCount</xpath>
+                <value>
+                    <costStuffCount>90</costStuffCount>
+                </value>
+            </li>
+
+            <!-- VAE_Headgear_Glasses -->
+            
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="VAE_Headgear_Glasses"]/equippedStatOffsets/PsychicSensitivity</xpath>
+                <value>
+                    <ResearchSpeed>0.10</ResearchSpeed>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd" MayRequire="ludeon.rimworld.ideology">
+                <xpath>Defs/ThingDef[defName="VAE_Headgear_Glasses"]/equippedStatOffsets</xpath>
+                <value>
+                    <HackingSpeed>0.10</HackingSpeed>
+                </value>
+            </li>
+
+        </operations>
+    </Operation>
+</Patch>

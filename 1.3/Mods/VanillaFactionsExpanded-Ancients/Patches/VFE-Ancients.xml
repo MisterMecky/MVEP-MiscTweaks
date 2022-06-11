@@ -1,10 +1,6 @@
 <Patch>
-    <Operation Class="PatchOperationFindMod">
-        <mods>
-            <li>Vanilla Factions Expanded - Ancients</li>
-        </mods>
-
-        <match Class="patchOperationSequence">
+    <Operation Class="PatchOperationSequence">
+        <operations>
 
             <li Class="PatchOperationRemove">
                 <xpath>Defs/VFEAncients.PowerDef[defName = "MartialArtist"]/setStats</xpath>
@@ -19,8 +15,6 @@
                 </value>
             </li>
 
-        </match>
-
-        
+        </operations>
     </Operation>
 </Patch>

@@ -73,6 +73,9 @@
 - Plasma Rifle
     - (TODO) change unconscious effect to stunning
 ### Vanilla Factions Expanded - Settlers
+### Vanilla Traits Expanded
+- Insomniac
+    - Now only sleeps when rest is under **40%**
 ### Vanilla Weapons Expanded
 ### Vanilla Weapons Expanded - Grenades
 - (TODO) Make accessories infinite use.
@@ -95,7 +98,7 @@
             - further shots increase tranquilized progress
             - effected greatly by bodysize
             - Evolves to Anaesthetised when 100%
-        - Anaesthetised
+            - Anaesthetised
             - Applied when Tranquilized reaches 100%
             - Further shots reset Anaesthetised time
             - ??? Shots to pawns wearing off Anaesthetised will instantly afflict Tranquilized

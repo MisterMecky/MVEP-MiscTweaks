@@ -1,0 +1,33 @@
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+
+            <!-- Bin_Large -->
+
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName="Bin_Large"]/comps/li[@Class="AOMoreFurniture.CompProperties_BinClean"]</xpath>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="Bin_Large"]/statBases/Cleanliness</xpath>
+                <value>
+                    <Cleanliness>12</Cleanliness>
+                </value>
+            </li>
+
+            <!-- Bin_Small -->
+
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName="Bin_Small"]/comps/li[@Class="AOMoreFurniture.CompProperties_BinClean"]</xpath>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="Bin_Small"]/statBases/Cleanliness</xpath>
+                <value>
+                    <Cleanliness>6</Cleanliness>
+                </value>
+            </li>
+
+        </operations>
+    </Operation>
+</Patch>

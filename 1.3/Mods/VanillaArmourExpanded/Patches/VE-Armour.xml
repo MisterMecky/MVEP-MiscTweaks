@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <Patch>
     <Operation Class="PatchOperationSequence">
         <operations>
@@ -24,6 +25,18 @@
                     <ShootingAccuracyOutdoorsDarkOffset>0.10</ShootingAccuracyOutdoorsDarkOffset>
                     <ShootingAccuracyIndoorsDarkOffset>0.10</ShootingAccuracyIndoorsDarkOffset>
                 </value>
+            </li>
+
+            <!-- VAE_Headgear_HAZMATMask -->
+
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName="VAE_Headgear_HAZMATMask"]/apparel/tags/li[text() = "SpacerMilitary"]</xpath>
+            </li>
+
+            <!-- VAE_Apparel_HAZMATSuit -->
+
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName="VAE_Apparel_HAZMATSuit"]/apparel/tags/li[text() = "SpacerMilitary"]</xpath>
             </li>
 
         </operations>

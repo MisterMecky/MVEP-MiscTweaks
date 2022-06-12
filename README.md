@@ -26,26 +26,32 @@
     - Name changed to **Night Vision Goggles**
     - Description  changed
     - Aiming delay offset **(-10%)** changed to Shooting Accuracy Outdoors Dark offset **(+10%)** and Shooting Accuracy Indoors Dark offset **(+10%)**
-- (TODO???) Hazmat Helmet - Increase layer to draw over headgears like glasses and gasmasks
+- Hazmat Suit + Hood
+  - No longer generates on pawns
 ### Vanilla Books Expanded
 - Book Writing
     - Removes skill gain from writing books
-- (TODO??) Reduce skill gain from reading books
+- (MAYBE) Reduce skill gain from reading books
 ### Vanilla Cooking Expanded
 - (TODO???) Hediffs - Replace Diabetes, High Blood Presssure and Cholesterol with other debuffs
 - (TODO???) Canning - Change workshop size to 1x3, increase steel cost of canning to 5, increase work cost of canning
 - (TODO???) Canned food - Change debuff from high blood pressure **to** -1 moodlet from eating canned food
-- (TODO???) Sugar Addiction
+- (NEWMOD???) Sugar Addiction
 ### Vanilla Plants Expanded
 - (TODO) Make fruit trees transplantable
 ### Vanilla Plants Expanded - Succulents
 - Succulent Sowing Research
     - Tech cost reduced from **1000** to **300**
 ### Vanilla Furniture Expanded
-- (TODO??) Small and Large Bins - Replace with workshop linkable Bins that increase cleanliness of workshops
+- Small and Large Bins
+  - No longer autocleans in a radius
+  - Increased cleanliness score
+  - (MAYBE) Make linkable that increases workshop cleanliness
 ### Vanilla Furniture Expanded - Production
-- (TODO) Add advanced components price to large workshops
-- (TODO) Add bulk recipes for large workshops
+- Adds advanced components price to large workshops
+- Large Stove
+  - Adds bulk (x8) recipes for most vanilla meals
+  - Adds bulk (x8) recipes for most VE Cooking meals **(If VE Cooking is active)**
 ### Vanilla Furniture Expanded - Security
 - Explosive barrel 
     - Drops nothing on destruction
@@ -60,7 +66,11 @@
 - Rugs 
     - Tech Level reduced from **Industrial** to **Medieval**
 ### Vanilla Furniture Expanded - Spacer
-- (TODO?) Restrict research to techprints
+- (MAYBE) Restrict research to techprints
+### Vanilla Furniture Expanded - Architect
+- Single Door
+  - Hitpoint max reduced from **120** to **80**
+  - Door opening speed reduce from **2.5** to **1.0**
 ### Vanilla Factions Expanded - Ancients
 - Martial Artist *Power* 
   - No longer 100% chance to dodge, 40 added to melee dodge offset (I have no idea how much this is)
@@ -80,11 +90,11 @@
 ### Vanilla Weapons Expanded - Grenades
 - (TODO) Make accessories infinite use.
 ### Vanilla Weapons Expanded - Coilguns
-- (TODO?) Restrict research to techprints
+- (MAYBE) Restrict research to techprints
 ### Vanilla Weapons Expanded - Frontier
 ### Vanilla Weapons Expanded - Heavy Weapons
 ### Vanilla Weapons Expanded - Laser
-- (TODO?) Restrict research to techprints
+- (MAYBE) Restrict research to techprints
 ### Vanilla Weapons Expanded - Non Lethal
 - Dartgun
     - (TODO) Overwrite weapon with new hediff effects
@@ -103,4 +113,4 @@
             - Further shots reset Anaesthetised time
             - ??? Shots to pawns wearing off Anaesthetised will instantly afflict Tranquilized
 ### Vanilla Fishing Expanded
--  (TODO) Reworking fishing designations to only have one option rather than three (Small, Medium, Large)
+-  (MAYBE) Reworking fishing designations to only have one option rather than three (Small, Medium, Large)

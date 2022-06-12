@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="VFE_TableMachiningLarge"]/costList</xpath>
+                <value>
+                    <ComponentSpacer>2</ComponentSpacer>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="VFE_TableSmithyLarge"]/costList</xpath>
+                <value>
+                    <ComponentSpacer>2</ComponentSpacer>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="VFE_TableStoveLarge"]/costList</xpath>
+                <value>
+                    <ComponentSpacer>2</ComponentSpacer>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="VFE_TableTailorLarge"]/costList</xpath>
+                <value>
+                    <ComponentSpacer>2</ComponentSpacer>
+                </value>
+            </li>
+
+        </operations>
+    </Operation>
+</Patch>

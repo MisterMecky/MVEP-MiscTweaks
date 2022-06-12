@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--=================================== Simple meal ==========================================-->
+
+    <RecipeDef ParentName="CookMealBase">
+        <defName>MKY_CookMealSimpleMegaBulk</defName>
+        <label>cook simple meal x8</label>
+        <description>Cook 8 straightforward meals from one ingredient.</description>
+        <jobString>Cooking 8 simple meals.</jobString>
+        <workAmount>2400</workAmount>
+        <workSpeedStat>CookSpeed</workSpeedStat>
+        <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_CookMeal</soundWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+        <recipeUsers>
+			<li>VFE_TableStoveLarge</li>
+		</recipeUsers>
+        <ingredients>
+            <li>
+            <filter>
+                <categories>
+                <li>FoodRaw</li>
+                </categories>
+            </filter>
+            <count>4.0</count>
+            </li>
+        </ingredients>
+        <products>
+            <MealSimple>8</MealSimple>
+        </products>
+        <workSkill>Cooking</workSkill>
+    </RecipeDef>
+
+      <!--=================================== Fine meal ==========================================-->
+
+    <RecipeDef Name="MKY_CookMealFineMegaBulkBase" ParentName="CookMealBase" Abstract="True">
+        <workAmount>3600</workAmount>
+        <workSpeedStat>CookSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_CookMeal</soundWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+        <recipeUsers>
+			<li>VFE_TableStoveLarge</li>
+		</recipeUsers>
+        <skillRequirements>
+            <Cooking>6</Cooking>
+        </skillRequirements>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="MKY_CookMealFineMegaBulkBase">
+        <defName>MKY_CookMealFineMegaBulk</defName>
+        <label>cook fine meal x8</label>
+        <description>Cook 8 somewhat complex meals from a combination of meat and plant ingredients. Some of the ingredients are wasted in order to create a good eating experience.</description>
+        <jobString>Cooking 8 fine meals.</jobString>
+        <ingredients>
+            <li>
+            <filter>
+                <categories>
+                <li>MeatRaw</li>
+                <li>AnimalProductRaw</li>
+                </categories>
+            </filter>
+            <count>2.0</count>
+            </li>
+            <li>
+            <filter>
+                <categories>
+                <li>PlantFoodRaw</li>
+                </categories>
+            </filter>
+            <count>2.0</count>
+            </li>
+        </ingredients>
+        <products>
+            <MealFine>8</MealFine>
+        </products>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="MKY_CookMealFineMegaBulkBase">
+        <defName>MKY_CookMealFineMegaBulk_Meat</defName>
+        <label>cook carnivore fine meal x8</label>
+        <description>Cook 8 somewhat complex meals from meat ingredients. Some of the ingredients are wasted in order to create a good eating experience. Producing varied flavors with meat alone introduces extra inefficiencies.</description>
+        <jobString>Cooking 8 carnivore fine meals.</jobString>
+        <ingredients>
+            <li>
+            <filter>
+                <categories>
+                <li>MeatRaw</li>
+                </categories>
+            </filter>
+            <count>6.0</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <disallowedCategories>
+            <li>PlantFoodRaw</li>
+            <li>AnimalProductRaw</li>
+            </disallowedCategories>
+        </fixedIngredientFilter>
+        <products>
+            <MealFine_Meat>8</MealFine_Meat>
+        </products>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="MKY_CookMealFineMegaBulkBase">
+        <defName>MKY_CookMealFineMegaBulk_Veg</defName>
+        <label>cook vegetarian fine meal x8</label>
+        <description>Cook 8 somewhat complex meals from plant ingredients. Some of the ingredients are wasted in order to create a good eating experience. Producing varied flavors with plants alone introduces extra inefficiencies.</description>
+        <jobString>Cooking 8 vegetarian fine meals.</jobString>
+        <ingredients>
+            <li>
+            <filter>
+                <categories>
+                <li>PlantFoodRaw</li>
+                <li>AnimalProductRaw</li>
+                </categories>
+            </filter>
+            <count>6.0</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <disallowedCategories>
+            <li>MeatRaw</li>
+            </disallowedCategories>
+        </fixedIngredientFilter>
+        <products>
+            <MealFine_Veg>8</MealFine_Veg>
+        </products>
+    </RecipeDef>
+
+    <!--=================================== Lavish meal ==========================================-->
+
+    <RecipeDef Name="MKY_CookMealLavishMegaBulkBase" ParentName="CookMealBase" Abstract="True">
+        <workAmount>6400</workAmount>
+        <workSpeedStat>CookSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_CookMeal</soundWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+        <recipeUsers>
+			<li>VFE_TableStoveLarge</li>
+		</recipeUsers>
+        <skillRequirements>
+          <Cooking>8</Cooking>
+        </skillRequirements>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="MKY_CookMealLavishMegaBulkBase">
+        <defName>MKY_CookMealLavishMegaBulk</defName>
+        <label>cook lavish meal x8</label>
+        <description>Cook 8 very complex meals from a combination of meat and plant ingredients. Much of the ingredients are wasted in order to create the best eating experience.</description>
+        <jobString>Cooking 8 lavish meals.</jobString>
+        <ingredients>
+          <li>
+            <filter>
+              <categories>
+                <li>MeatRaw</li>
+                <li>AnimalProductRaw</li>
+              </categories>
+            </filter>
+            <count>4.0</count>
+          </li>
+          <li>
+            <filter>
+              <categories>
+                <li>PlantFoodRaw</li>
+              </categories>
+            </filter>
+            <count>4.0</count>
+          </li>
+        </ingredients>
+        <products>
+          <MealLavish>8</MealLavish>
+        </products>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="MKY_CookMealLavishMegaBulkBase">
+        <defName>MKY_CookMealLavishMegaBulk_Veg</defName>
+        <label>cook vegetarian lavish meal x8</label>
+        <description>Cook 8 very complex meals from plant ingredients. Much of the ingredients are wasted in order to create the best eating experience. Producing varied flavors with plants alone introduces extra inefficiencies.</description>
+        <jobString>Cooking 8 vegetarian lavish meals.</jobString>
+        <ingredients>
+          <li>
+            <filter>
+              <categories>
+                <li>PlantFoodRaw</li>
+                <li>AnimalProductRaw</li>
+              </categories>
+            </filter>
+            <count>10.0</count>
+          </li>
+        </ingredients>
+        <fixedIngredientFilter>
+          <disallowedCategories>
+            <li>MeatRaw</li>
+          </disallowedCategories>
+        </fixedIngredientFilter>
+        <products>
+          <MealLavish_Veg>8</MealLavish_Veg>
+        </products>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="MKY_CookMealLavishMegaBulkBase">
+        <defName>MKY_CookMealLavishMegaBulk_Meat</defName>
+        <label>cook carnivore lavish meal x8</label>
+        <description>Cook 8 very complex meals from meat ingredients. Much of the ingredients are wasted in order to create the best eating experience. Producing varied flavors with meat alone introduces extra inefficiencies.</description>
+        <jobString>Cooking 8 carnivore lavish meals.</jobString>
+        <ingredients>
+          <li>
+            <filter>
+              <categories>
+                <li>MeatRaw</li>
+              </categories>
+            </filter>
+            <count>10.0</count>
+          </li>
+        </ingredients>
+        <fixedIngredientFilter>
+          <disallowedCategories>
+            <li>PlantFoodRaw</li>
+            <li>AnimalProductRaw</li>
+          </disallowedCategories>
+        </fixedIngredientFilter>
+        <products>
+          <MealLavish_Meat>8</MealLavish_Meat>
+        </products>
+    </RecipeDef>
+
+    <!--=================================== Survival meal ==========================================-->
+
+    <RecipeDef ParentName="CookMealBase">
+        <defName>MKY_CookMealSurvivalMegaBulk</defName>
+        <label>cook packaged survival meal x8</label>
+        <description>Prepare 8 packaged survival meals from a combination of meat and plant ingredients. Much of the ingredients are wasted in the preservation process.</description>
+        <jobString>Cooking 8 survival meals.</jobString>
+        <workAmount>2880</workAmount>
+        <workSpeedStat>CookSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_CookMeal</soundWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+        <recipeUsers>
+			<li>VFE_TableStoveLarge</li>
+		</recipeUsers>
+        <ingredients>
+          <li>
+            <filter>
+              <categories>
+                <li>MeatRaw</li>
+                <li>AnimalProductRaw</li>
+              </categories>
+            </filter>
+            <count>2.40</count>
+          </li>
+          <li>
+            <filter>
+              <categories>
+                <li>PlantFoodRaw</li>
+              </categories>
+            </filter>
+            <count>2.40</count>
+          </li>
+        </ingredients>
+        <products>
+          <MealSurvivalPack>8</MealSurvivalPack>
+        </products>
+        <skillRequirements>
+          <Cooking>8</Cooking>
+        </skillRequirements>
+        <researchPrerequisite>PackagedSurvivalMeal</researchPrerequisite>
+    </RecipeDef>
+
+    <!--=================================== Bakes ==========================================-->
+
+    <RecipeDef MayRequire="vanillaexpanded.vcooke" Name="MKY_CookBakeMealBase" Abstract="True"> <!-- This is here to remove xml errors -->
+      <fixedIngredientFilter>
+        <categories>
+          <li>FoodRaw</li>
+        </categories>
+        <thingDefs>
+          <li>VCE_Flour</li>
+        </thingDefs>
+        <specialFiltersToDisallow>
+          <li>AllowPlantFood</li>
+        </specialFiltersToDisallow>
+      </fixedIngredientFilter>
+      <defaultIngredientFilter>
+        <categories>
+          <li>FoodRaw</li>
+        </categories>
+        <thingDefs>
+          <li>VCE_Flour</li>
+        </thingDefs>
+        <disallowedCategories>
+          <li>EggsFertilized</li>
+        </disallowedCategories>
+        <disallowedThingDefs>
+          <li>Meat_Human</li>
+          <li>Meat_Megaspider</li>
+          <li>InsectJelly</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+      <workSkill>Cooking</workSkill>
+    </RecipeDef>
+
+    <RecipeDef MayRequire="vanillaexpanded.vcooke" ParentName="MKY_CookBakeMealBase">
+		<defName>MKY_CookBakeSimpleMegaBulk</defName>
+		<label>cook simple bake x16</label>
+		<description>Cook 16 simple bakes quickly cooked from flour.</description>
+		<jobString>Cooking simple bake x16.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>3600</workAmount>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>VFE_TableStoveLarge</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VCE_Flour</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+		</ingredients>
+		<products>
+			<VCE_SimpleBake>16</VCE_SimpleBake>
+		</products>
+  </RecipeDef>
+
+  <RecipeDef MayRequire="vanillaexpanded.vcooke" ParentName="MKY_CookBakeMealBase">
+		<defName>MKY_CookBakeFineMegaBulk</defName>
+		<label>cook fine bake x16</label>
+		<description>Cook 16 complex bakes assembled with care from a wide selection of ingredients and flour.</description>
+		<jobString>Cooking fine bake x16.</jobString>
+		<workAmount>5400</workAmount>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>VFE_TableStoveLarge</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+						<li>AnimalProductRaw</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VCE_Flour</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<products>
+			<VCE_FineBake>16</VCE_FineBake>
+		</products>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+	</RecipeDef>
+
+  <RecipeDef MayRequire="vanillaexpanded.vcooke" ParentName="MKY_CookBakeMealBase">
+		<defName>MKY_CookBakeLavishMegaBulk</defName>
+		<label>cook lavish bake x16</label>
+		<description>Cook 16 masterpieces of the culinary arts, these bakes nourish the body, mind, and soul.</description>
+		<jobString>Cooking lavish bake x16.</jobString>
+		<workAmount>9600</workAmount>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>VFE_TableStoveLarge</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+						<li>AnimalProductRaw</li>
+					</categories>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VCE_Flour</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+		</ingredients>
+		<products>
+			<VCE_LavishBake>16</VCE_LavishBake>
+		</products>
+		<skillRequirements>
+			<Cooking>8</Cooking>
+		</skillRequirements>
+	</RecipeDef>
+
+    <!--=================================== Desserts ==========================================-->
+
+    <RecipeDef MayRequire="vanillaexpanded.vcooke" Name="MKY_CookDessertMealBase" Abstract="True"> <!-- This is here to remove xml errors -->
+		<fixedIngredientFilter>			
+			<thingDefs>
+				<li>RawBerries</li>
+			</thingDefs>
+			<specialFiltersToDisallow>
+				<li>AllowPlantFood</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>			
+			<thingDefs>
+				<li>RawBerries</li>
+			</thingDefs>
+			<disallowedCategories>
+				<li>EggsFertilized</li>
+			</disallowedCategories>			
+		</defaultIngredientFilter>
+		<workSkill>Cooking</workSkill>
+	</RecipeDef>
+
+	<RecipeDef MayRequire="vanillaexpanded.vcooke" Name="MKY_CookComplexDessertMealBase" Abstract="True"> <!-- This is here to remove xml errors -->
+		<fixedIngredientFilter>		
+			<categories>
+				<li>AnimalProductRaw</li>
+			</categories>		
+			<thingDefs>
+				<li>RawBerries</li>
+				<li>Chocolate</li>
+			</thingDefs>
+			<specialFiltersToDisallow>
+				<li>AllowPlantFood</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>	
+			<categories>
+				<li>AnimalProductRaw</li>
+			</categories>			
+			<thingDefs>
+				<li>RawBerries</li>
+
+			</thingDefs>
+			<disallowedCategories>
+				<li>EggsFertilized</li>
+			</disallowedCategories>	
+			<disallowedThingDefs>
+				<li>Chocolate</li>
+
+			</disallowedThingDefs>			
+		</defaultIngredientFilter>
+		<workSkill>Cooking</workSkill>
+	</RecipeDef>
+
+    <RecipeDef MayRequire="vanillaexpanded.vcooke" ParentName="MKY_CookDessertMealBase">
+		<defName>MKY_CookDessertSimpleMegaBulk</defName>
+		<label>cook simple dessert x8</label>
+		<workAmount>2400</workAmount>
+		<description>Cook 8 simple desserts quickly made from a few fruits and other ingredients.</description>
+		<jobString>Cooking simple dessert x8.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>VFE_TableStoveLarge</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawBerries</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<products>
+			<VCE_SimpleDessert>8</VCE_SimpleDessert>
+		</products>
+	</RecipeDef>
+
+    <RecipeDef MayRequire="vanillaexpanded.vcooke" ParentName="MKY_CookComplexDessertMealBase">
+		<defName>MKY_CookDessertFineMegaBulk</defName>
+		<label>cook fine dessert x8</label>
+		<workAmount>3600</workAmount>
+		<description>Cook 8 complex desserts assembled with care from a wide selection of ingredients.</description>
+		<jobString>Cooking fine dessert x8.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>VFE_TableStoveLarge</li>
+		</recipeUsers>
+		<ingredients>
+			<li Name="Fruit">
+				<filter>
+					<thingDefs>
+						<li>RawBerries</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>AnimalProductRaw</li>
+					</categories>
+					<thingDefs>
+						<li>Chocolate</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<products>
+			<VCE_FineDessert>8</VCE_FineDessert>
+		</products>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+	</RecipeDef>
+
+    <RecipeDef MayRequire="vanillaexpanded.vcooke" ParentName="MKY_CookComplexDessertMealBase">
+		<defName>MKY_CookDessertLavishMegaBulk</defName>
+		<label>cook lavish dessert x8</label>
+		<description>Cook 8 masterpieces of the culinary arts, this dessert nourishes the body, mind, and soul.</description>
+		<jobString>Cooking lavish dessert x8.</jobString>
+		<workAmount>6400</workAmount>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>VFE_TableStoveLarge</li>
+		</recipeUsers>
+		<ingredients>
+			<li Name="Fruit">
+				<filter>
+					<thingDefs>
+						<li>RawBerries</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>AnimalProductRaw</li>
+					</categories>
+					<thingDefs>
+						<li>Chocolate</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<products>
+			<VCE_LavishDessert>8</VCE_LavishDessert>
+		</products>
+		<skillRequirements>
+			<Cooking>8</Cooking>
+		</skillRequirements>
+	</RecipeDef>	
+
+</Defs>
